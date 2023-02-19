@@ -1,1 +1,2 @@
-export * from './class/TimesUp.class';
+export * from './TimesUp.class';
+export * from './Player.interface';

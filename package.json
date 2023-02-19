@@ -1,27 +1,30 @@
 {
   "name": "@enzo_corsico/times-up-game",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.5",
+  "description": "Times up game",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepare": "tsc"
+    "prebuild": "rimraf dist",
+    "build": "tsc --build",
+    "start": "tsc && node dist/index.js",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/enzocorsico/Times-up-game.git"
   },
-  "author": "",
+  "author": "enzo_corsico <enzo.corsico@outlook.fr>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/enzocorsico/Times-up-game/issues"
   },
   "homepage": "https://github.com/enzocorsico/Times-up-game#readme",
   "devDependencies": {
+    "rimraf": "^4.1.2",
     "typescript": "^4.9.5"
   }
 }

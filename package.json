@@ -1,6 +1,6 @@
 {
   "name": "@enzo_corsico/times-up-game",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Times up game",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
